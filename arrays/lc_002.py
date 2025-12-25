@@ -1,4 +1,5 @@
-# Best time to buy and sell stonks
+# Best time to buy and sell stocks
+
 
 
 prices = [7,1,5,3,6,0]
