@@ -1,14 +1,21 @@
 # Best time to buy and sell stonks
 
 def minmax():    
-    prices =[7,6,4,3,1]
-    last_profit=0
-    
+    prices =[7,9,3,7,1]
+    max_profit=0
+    min_price=prices[0]
 
-    for i in range(len(prices)):
-        for j in range(i+1,len(prices)):
+    for i in range(1,len(prices)):
             
-            profit=prices[j]-prices[i]
-            print(profit)
+            profit=prices[i]-min_price
     
-minmax()
+            if profit > max_profit:
+                max_profit=profit
+                
+            if prices[i] < min_price:
+                min_price=prices[i]
+        
+    return max_profit
+            
+        
+print(minmax())
