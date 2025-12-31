@@ -11,7 +11,9 @@ def Profit():
     
     now what this code does is assume that the minimum price to start must be in the first index of the array, and it sets maximum profit to 0 as the problem description says
     after that it starts the loop from index number 1, and it subtracts the minimum value index 0 from index 1 to get the first profit, if the profit is greater than
-    0 which it will be most of the times, except when we get a negative number
+    0 for the first iteration and max_profit for the rest of iterations, it replaces the max_profit with the new profit, after that it compares the price 
+    on ith day with min_price which initially is just set to the 0th index value, now if the price on ith day is less than the price on the 0th day,
+    min price is updated with the new price and so it goes, until len(prices) is reached and when the loop is terminated whatever the value is in max_profit is max_profit
     """
     prices =[7,9,3,7,1]
     max_profit=0
