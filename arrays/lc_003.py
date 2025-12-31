@@ -9,6 +9,10 @@ def maxSubArray():
     to find the maximum subarray, if current_max_value (sum of 0th and 1st index value) is not less than the 1st index value we keep it, because it should help us in maximizing
     the subarray sum, now we compare the over_all_max_value with the current_max_value in order to find the global maximum subarray sum, simply by comparing.
     
+    
+    Time Complexity : O(N)
+    Space Complexity : O(1)
+    
     """
 
     nums = [5,4,-1,7,8]
